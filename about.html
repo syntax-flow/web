@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Syntax Flow</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="Shortcut Icon" href="images/logo.png">
+  <meta property="og:image" itemprop="image" content="https://syntax-flow.github.io/web/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="js/menu.js"></script>
+ 
+</head>
+<body>
+<header>
+    <nav> 
+      <a href="index.html">
+        <img src="images/logo.png" class="logo"/>
+        </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <!--Add view data link - to be visible to the user with user role 3 and above-->
+              
+      <li><a href="login.html">Login</a></li>
+       </ul>
+       
+      <!--Begin Search Design-->
+      <div class="searchIcon">
+        <span class="searchHead"></span>
+        <span class="searchHandle"></span>
+      </div>
+
+      <div class="quickSearchSection">
+<input type="text" name="quickSearchID" id="quickSearchID" placeholder="Type to Search" onkeyup="return  fetchData(this.value);" autocomplete="off" autofocus/>
+<button class="btnCloseSearch">Close</button>
+<div id="quickSearchResult"></div>
+      </div>      
+      <!--End Search Design-->
+      
+<div class="mobile_menu_icon">
+  <span class="mobile_menu_icon_top"></span>
+  <span class="mobile_menu_icon_middle"></span>
+  <span class="mobile_menu_icon_bottom"></span>
+</div>
+    </nav>
+  </header>
+
+  <h1>
+About Page
+</h1>
+
+<footer>
+Footer Content Here
+</footer>
+
+</body>
+</html>
