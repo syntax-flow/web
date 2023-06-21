@@ -1,0 +1,244 @@
+ body{
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+header{
+  background: linear-gradient(90deg, #0f0524, #1e0343, #180218);
+  border-bottom: #30014e 1px solid;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+a:hover, button:hover{
+opacity: .5;
+cursor: pointer;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 22px;
+}
+nav .logo{
+ width: 40px;
+}
+li{
+  display: inline-block;
+}
+li a{
+  padding: 15px;
+  color: #fcfcfc;
+}
+
+
+/*Begin Search Style*/
+.searchIcon{
+  position: relative;
+    width: 50px;
+    height: 30px;
+}
+.searchIcon:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+.searchIcon span{
+  display: inline-block;
+  position: absolute;
+}
+.searchHead{
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  border-radius: 50%;
+  border: 2px #ececec solid;
+}
+.searchHandle{
+  width: 18px;
+  height: 3px;
+  background-color: #ececec;
+  right: 12px;
+  bottom: 4px;
+  border-radius: 9px;
+  transform: rotate(35deg);
+}
+.quickSearchSection{
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 85%;
+  background: linear-gradient(90deg, #0f0524, #1e0343, #180218);
+display: none;
+}
+.quickSearchSection input, .quickSearchSection button{
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+    background: linear-gradient(90deg, #0f0524, #1e0343, #180218);
+}
+.quickSearchSection input{
+  width: 70%;
+  border: 1px #999 solid;
+  padding: 0;
+  text-align: center;
+  color: #ccc;
+}
+.quickSearchSection input:focus{
+  border: 1px #888 solid;   
+  border-radius: 8px 8px 0 0;
+}
+.quickSearchSection button{
+  width: 112px; 
+    height: 44px;
+    border: 1px #777 solid;
+    padding: 0;
+    color: #ccc;
+}
+.quickSearchSection button:hover{
+  border: 1px #ce2f00 solid;
+    color: #ce2f00;
+    opacity: 1;
+}
+/*End Search Style*/
+
+
+
+section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 34px; 
+}
+.mobile_menu_icon{
+  position: absolute;
+  display: none;
+  width: 30px;
+  height: 26px;
+  top: 15px;
+  right: 7px;
+  border-radius: 8px; 
+}
+.mobile_menu_icon span{
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 1.6px;
+  right: 3px;
+  background-color: #fcfcfc;
+  transition: .5s;
+}
+.mobile_menu_icon_middle{
+  top: 7px;
+}
+.mobile_menu_icon_bottom{
+  top: 14px;
+}
+/* These 3 blocks code below will be added to the mobile menu icon when clicked
+The implementation will be done in javascript */
+
+.mobile_menu_icon_top_twist{
+  transform: rotate(135deg);
+  top: 10px;
+}
+.mobile_menu_icon_middle_twist{
+  background-color: transparent!important;
+}
+.mobile_menu_icon_bottom_twist{
+  transform: rotate(45deg);
+  top: 10px;
+  right: 12px;
+}
+
+footer{
+  padding: 34px;
+  background-color: #180202;
+  color: #b8a8c3;
+}
+footer h4{
+  padding-bottom: 6px;
+  font-size: 1.5em;
+}
+footer a{
+  display: block;
+  width: 90%;
+  padding: 3px 0 3px 0;
+  color: #a7a7a7;
+  } 
+  footer img{
+    margin: 0.5em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  }
+footer img:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+/* nav{
+height: 40px;
+} */
+
+/* nav .logo{
+ width: 27px;
+} */
+  .mobile_menu_icon{
+    display: block;
+    z-index: 5;
+  }
+ul{
+  position: absolute;
+  top: -70em;
+  right: 0;
+  background-color: #0c0120;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transition: .3s;
+}
+li{
+  display: block;
+}
+li a{
+  display: block;
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.profile_link img{
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile_link::before{
+    display: inline-block;
+    content: "";
+    width: 2px;
+}
+
+/*Begin Search Style*/
+.searchIcon{
+    margin: 0 auto;
+}
+.quickSearchSection{
+    width: 100%;
+    z-index: 7;
+}
+.quickSearchSection input, #quickSearchResult{
+    width: 80%;
+}
+.quickSearchSection button{
+    width: 15%;
+    font-size: 15px;
+}
+/*End Search Style*/
+}   
